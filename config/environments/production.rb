@@ -80,8 +80,8 @@ Rails.application.configure do
   config.assets.precompile += ['active_admin.css', 'active_admin.js']
 
   config.action_mailer.default_url_options = { host: 'octohell.herokuapp.com', port: ENV['PORT'] }
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :sendmail
 
   # See email at http://localhost:1080
-   config.action_mailer.smtp_settings = { :address => "octohell.herokuapp.com", :port => 5000 }
+   config.action_mailer.smtp_settings = { :address => "octohell.herokuapp.com" }
 end
