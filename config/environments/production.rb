@@ -83,5 +83,5 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   # See email at http://localhost:1080
-  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+ # config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 end
