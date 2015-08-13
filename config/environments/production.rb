@@ -77,6 +77,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.assets.precompile += ['active_admin.css', 'active_admin.js']
 
   config.action_mailer.default_url_options = { host: 'carsstore.herokuapp.com', port: 3000 }
   config.action_mailer.delivery_method = :smtp
